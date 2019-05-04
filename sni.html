@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.suka.moe/favicon/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+    <title>SNI Scanner - Sukka's Lab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/spectre.css@0.5.0,npm/spectre.css@0.5.0/dist/spectre-exp.min.css,npm/spectre.css@0.5.0/dist/spectre-icons.min.css,npm/suka.css@0.1.2">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="h2 text-center sk-mt-8">运营商 SNI 缓存扫描</h1>
+    </div>
+    <div class="container">
+        <div class="columns">
+            <div class="column col-sm-12 col-md-8 col-6 col-mx-auto">
+                <div class="card sk-shadow-2">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label class="form-label" for="ip">请输入 IP 段</label>
+                            <input class="form-input" id="ip" placeholder="192.168.0.0/24">
+                            <small>请输入 CIDR 格式以 0 结尾的 /24 IP 段</small>
+                        </div>
+                        <div class="form-group sk-mt-3">
+                            <label class="form-label" for="url">请输入图片 URL</label>
+                            <input class="form-input" id="url" type="url" placeholder="http://ww1.sinaimg.com/small/0072Lfvtly1ftyzouv1h6j3020020glm.jpg">
+                            <small>该图片文件需可以通过 HTTP 访问</small>
+                        </div>
+                        <button class="btn btn-primary sk-mt-6" onclick="data()">开始扫描</button>
+                        <button class="btn btn-primary sk-mt-6" onclick="output()">输出结果</button>
+                    </div>
+                    <div class="card-footer">
+                        <p id="output" class="sk-mb-0"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        /*!
+         * SNI Proxy Scanner Tool for /24 (Web Version)
+         * Author: SukkaW
+         * Link: https://lab.suka.moe/sni/
+        */
+        window.success = [];
+        var emptyArr = [];
+        function scan(ip, file) {
+            for (var idx = 0; idx < 256; idx++) {
+                checker(ip, idx, file)
+            }
+        }
+
+        function checker(ip, idx, file) {
+            var img = new Image;
+            var timeout = setTimeout(() => {
+                img.onerror = img.onload = null;
+                return;
+            }, 5000);
+            
+            img.onerror = () => {
+                clearTimeout(timeout);
+            }
+
+            img.onload = () => {
+                clearTimeout(timeout);
+                window.success.push(ip + '.' + idx)
+                document.getElementById('output').innerHTML = '<span class="text-primary">正在扫描，可能需要 10 分钟左右，</span><span class="text-success">已经找到 ' + window.success.length + ' 个</span>'
+            }
+
+            img.src = 'http://' + ip + '.' + idx + '/' + file;
+        }
+
+        function data() {
+            const regexIP = /\d{0,3}\.\d{0,3}\.\d{0,3}\.\d{0,3}/;
+            var ip = document.getElementById('ip').value;
+            var ipvalid = regexIP.exec(ip);
+            var url = document.getElementById('url').value;
+            if (ip.indexOf('.0/24') == -1) {
+                document.getElementById('output').innerHTML = '<span class="text-error">请检查 IP 段的格式！</span>'
+            } else if (!ipvalid) {
+                document.getElementById('output').innerHTML = '<span class="text-error">请检查 IP 段的格式！</span>'
+            } else if (url.indexOf('http://') == -1) {
+                document.getElementById('output').innerHTML = '<span class="text-error">请检查图片 URL 的格式！</span>'
+            } else {
+                var file = url.replace(/http:\/\//i, '');
+                var ip = ip.replace('.0/24', '');
+                document.getElementById('output').innerHTML = '<span class="text-primary">正在扫描，可能需要 10 分钟左右</span>'
+                scan(ip, file);
+            }
+        }
+        function output() {
+            if (window.success.length == 0) {
+                document.getElementById('output').innerHTML = '<span class="text-warning">没有找到运营商 SNI 缓存服务器！</span>'
+            } else {
+                document.getElementById('output').innerHTML = window.success.join('<br>')
+            }
+        }
+    </script>
+    <script>!function (a, b, c, d, e) { var f = c.screen, g = encodeURIComponent, h = ["ga=" + a, "dt=" + g(d.title), "dr=" + g(d.referrer), "ul=" + (e.language || e.browserLanguage || e.userLanguage), "sd=" + f.colorDepth + "-bit", "sr=" + f.width + "x" + f.height, "vp=" + Math.max(d.documentElement.clientWidth, c.innerWidth || 0) + "x" + Math.max(d.documentElement.clientHeight, c.innerHeight || 0), "z=" + +new Date]; c.__ga_img = new Image, c.__ga_img.src = b + "?" + h.join("&") }("UA-122669675-3", "https://ga.giuem.com", window, document, navigator, location);</script>
+</body>
+
+</html>
