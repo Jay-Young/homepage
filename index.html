@@ -33,6 +33,101 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="./assets/css/xenon-components.css">
     <link rel="stylesheet" href="./assets/css/xenon-skins.css">
     <link rel="stylesheet" href="./assets/css/nav.css">
+    <style>
+        a.btn.top {
+            background-color: #171C3E;
+        }
+        .side_btn {
+            position: fixed;
+            right: -40px;
+            bottom: 221px;
+            text-align: center;
+            z-index: 12;
+            line-height: 20px;
+            opacity: 0;
+            visibility: hidden
+        }
+
+        .side_btn a.btn.top {
+            background-color: #171C3E;
+        }
+
+        .side_btn.active {
+            right: 0px;
+            opacity: 1;
+            visibility: visible
+        }
+
+        .side_btn svg {
+            width: 16px;
+            height: 16px;
+            fill: #999
+        }
+
+        .side_btn a.btn {
+            padding: 8px;
+            background-color: #eee;
+            width: 36px;
+            height: 36px;
+            display: block;
+            margin-top: 4px;
+            color: #999;
+            position: relative
+        }
+
+        .side_btn a.btn span {
+            position: absolute;
+            white-space: nowrap;
+            top: 0;
+            right: 110%;
+            color: #fff;
+            height: 36px;
+            display: block;
+            padding: 2px 12px;
+            line-height: 32px;
+            opacity: 0;
+            visibility: hidden
+        }
+
+        .side_btn a.btn.top svg {
+            transform: scale(1, -1);
+            -webkit-transform: scale(1, -1);
+            transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg)
+        }
+
+        .side_btn a.btn:hover span {
+            right: 100%;
+            opacity: 1;
+            visibility: visible
+        }
+
+        .side_btn a.btn:hover svg {
+            fill: #fff
+        }
+        .side_btn a.btn.top:hover, .side_btn a.btn:hover, .side_btn a.btn span {
+            background-color: #019eff;
+            color: #fff;
+        }
+        span, a {
+            transition: ease-in-out 0.5s;
+        }
+        a, a:hover {
+            text-decoration: none;
+        }
+        body * {
+            box-sizing: border-box;
+        }
+        span {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background: transparent;
+        }
+    </style>
     <script src="./assets/js/jquery-1.11.1.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -4242,6 +4337,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
             <!--END 本站导航 -->
+            <section class="side_btn active">
+                <a class="btn top" id="back-to-top" href="#top" title="返回顶部" rel="external nofollow">       <svg t="1510297521288" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1965" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M745.65898437 533.84433594l-416.32822265 416.32822265c-6.66298828 6.66298828-15.86689453 10.78330078-26.03408203 10.78330079-20.33349609 0-36.81738281-16.48388672-36.81738282-36.81738282 0-10.1671875 4.12119141-19.37109375 10.78330079-26.03408203l394.49355468-394.49355469-381.82675781-381.89707031c-6.07763672-6.2859375-9.82265625-14.86054687-9.82265625-24.30878906 0-19.32539062 15.66650391-34.99189453 34.99189453-34.99189453 9.44912109 0 18.02285156 3.74501953 24.31845703 9.83144531l395.88398438 395.88398438c4.78740234 4.87265625 8.14042969 11.16914062 9.36738281 18.19599609-0.759375-4.89814453 0.29003906-5.52919922 0.99052734-4.47978516 6.64277344 6.65859375 10.75078125 15.8484375 10.75078125 25.99892578 0 10.14960938-4.10800781 19.34033203-10.75166015 25.99892578z"></path>
+                    </svg>
+                    <span>返回顶部</span>
+                </a>
+            </section>
             <!-- Main Footer -->
             <!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
             <!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
