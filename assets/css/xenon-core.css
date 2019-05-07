@@ -2162,14 +2162,14 @@ body {
     }
 }
 
-@media screen and (max-width:768px) and screen and (max-width:768px) {
+@media screen and (max-width:768px) and (screen) and (max-width:768px) {
     .navbar.horizontal-menu .navbar-inner .navbar-nav {
         margin-top: 10px;
         margin-bottom: 10px
     }
 }
 
-@media screen and (max-width:768px) and screen and (min-width:768px) {
+@media screen and (max-width:768px) and (screen) and (min-width:768px) {
     .navbar.horizontal-menu .navbar-inner .navbar-nav ul li.is-hidden {
         left: -20px;
         zoom: 1;
@@ -2278,7 +2278,7 @@ body.chat-open .user-info-navbar a[data-toggle=chat] {
     border: 0;
     padding: 0;
     margin: -30px;
-    margin-bottom: 30px
+    margin-bottom: 0px
 }
 
 .user-info-navbar .user-info-menu {
@@ -5613,11 +5613,11 @@ label.cbr-inline+.cbr-inline {
 
 .btn.btn-purple.btn-icon-standalone i {
     background-color: #7233ac;
-    border-right-color: #NaNNaNNaN
+    border-right-color: #6c31a4
 }
 
 .btn.btn-purple.btn-icon-standalone.btn-icon-standalone-right i {
-    border-left-color: #NaNNaNNaN
+    border-left-color: #6c31a4
 }
 
 .btn.btn-purple.btn-icon-standalone.btn-icon-standalone-right:hover i {

@@ -2,21 +2,6 @@
 <html lang="zh">
 
 <head>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WCKXJSL');</script>
-	<!-- End Google Tag Manager -->
-    <script async src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" >
-    </script>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9332970574016899",
-        enable_page_level_ads: true
-    });
-    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,10 +39,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body class="page-body">
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCKXJSL"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
     <!-- skin-white -->
 	<div class="page-container">
         <div class="sidebar-menu toggle-others fixed">
@@ -281,11 +262,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="#UED团队" class="smooth">
                             <i class="linecons-user"></i>
                             <span class="title">UED团队</span>
                         </a>
+                    </li>-->
+                    <li>
+                        <a>
+                            <i class="linecons-shop"></i>
+                            <span class="title">电子商务</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#购物商城" class="smooth">
+                                    <span class="title">购物商城</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#批发采购" class="smooth">
+                                    <span class="title">批发采购</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#精选店铺" class="smooth">
+                                    <span class="title">精选店铺</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#本站导航" class="smooth">
@@ -294,7 +298,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </a>
                     </li>
                     <li>
-                        <a href="about.html">
+                        <a href="./about">
                             <i class="linecons-heart"></i>
                             <span class="tooltip-blue">关于本站</span>
                             <!-- <span class="label label-Primary pull-right hidden-collapsed">♥︎</span> -->
@@ -315,6 +319,149 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </li>
                 </ul>
             </nav>
+            <!-- 搜索框 -->
+            <div id="search" class="s-search">
+                <div id="search-list" class="hide-type-list">
+                    <div class="s-type"><span></span>
+                        <div class="s-type-list animated fadeInUp"><label for="type-baidu"><span class="tile-lg bg-blue"><i
+                                        class="fa fa-star-half-full fa-2x m-t-sm"></i></span>常用</label><label
+                                for="type-search"><span class="tile-lg bg-teal"><i
+                                        class="fa fa-search fa-2x m-t-sm"></i></span>搜索</label><label for="type-br"><span
+                                    class="tile-lg bg-pink"><i class="fa fa-legal fa-2x m-t-sm"></i></span>工具</label><label
+                                for="type-zhihu"><span class="tile-lg bg-yellow"><i
+                                        class="fa fa-grav fa-2x m-t-sm"></i></span>社区</label><label for="type-taobao1"><span
+                                    class="tile-lg bg-red"><i class="fa fa-coffee fa-2x m-t-sm"></i></span>生活</label><label
+                                for="type-zhaopin"><span class="tile-lg bg-purple"><i
+                                        class="fa fa-users fa-2x m-t-sm"></i></span>求职</label></div>
+                    </div>
+                    <div class="search-group group-a"><span class="type-text">常用</span>
+                        <ul class="search-type">
+                            <li><input checked hidden type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd="
+                                    data-placeholder="百度一下"><label for="type-baidu"><span style="color:#2100E0">百度</span></label>
+                            </li>
+                            <li><input hidden type="radio" name="type" id="type-google" value="https://www.google.com/search?q="
+                                    data-placeholder="谷歌搜索"><label for="type-google"><span style="color:#3B83FA">G</span><span
+                                        style="color:#F3442C">o</span><span style="color:#FFC300">o</span><span
+                                        style="color:#4696F8">g</span><span style="color:#2CAB4E">l</span><span
+                                        style="color:#F54231">e</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-taobao" value="https://s.taobao.com/search?q="
+                                    data-placeholder="淘宝"><label for="type-taobao"><span style="color:#f40">淘宝</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-bing1" value="https://cn.bing.com/search?q="
+                                    data-placeholder="微软Bing搜索"><label for="type-bing1"><span
+                                        style="color:#007daa">Bing</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="search-group group-b"><span class="type-text">搜索</span>
+                        <ul class="search-type">
+                            <li><input hidden type="radio" name="type" id="type-search" value="https://www.baidu.com/s?wd="
+                                    data-placeholder="百度一下"><label for="type-search"><span style="color:#2319dc">百度</span></label>
+                            </li>
+                            <li><input hidden type="radio" name="type" id="type-google1" value="https://www.google.com/search?q="
+                                    data-placeholder="谷歌搜索"><label for="type-google1"><span style="color:#3B83FA">G</span><span
+                                        style="color:#F3442C">o</span><span style="color:#FFC300">o</span><span
+                                        style="color:#4696F8">g</span><span style="color:#2CAB4E">l</span><span
+                                        style="color:#F54231">e</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-360" value="https://www.so.com/s?q="
+                                    data-placeholder="360好搜"><label for="type-360"><span style="color:#19b955">360</span></label>
+                            </li>
+                            <li><input hidden type="radio" name="type" id="type-sogo" value="https://www.sogou.com/web?query="
+                                    data-placeholder="搜狗搜索"><label for="type-sogo"><span style="color:#ff5943">搜狗</span></label>
+                            </li>
+                            <li><input hidden type="radio" name="type" id="type-bing" value="https://cn.bing.com/search?q="
+                                    data-placeholder="微软Bing搜索"><label for="type-bing"><span
+                                        style="color:#007daa">Bing</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-sm" value="https://yz.m.sm.cn/s?q="
+                                    data-placeholder="UC移动端搜索"><label for="type-sm"><span style="color:#ff8608">神马</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-group group-c"><span class="type-text">工具</span>
+                        <ul class="search-type">
+                            <li><input hidden type="radio" name="type" id="type-br" value="http://rank.chinaz.com/all/"
+                                    data-placeholder="请输入网址(不带http://)"><label for="type-br"><span
+                                        style="color:#55a300">权重查询</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-links" value="http://link.chinaz.com/"
+                                    data-placeholder="请输入网址(不带http://)"><label for="type-links"><span
+                                        style="color:#313439">友链检测</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-icp" value="https://icp.aizhan.com/"
+                                    data-placeholder="请输入网址(不带http://)"><label for="type-icp"><span
+                                        style="color:#ffac00">备案查询</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-ping" value="http://ping.chinaz.com/"
+                                    data-placeholder="请输入网址(不带http://)"><label for="type-ping"><span
+                                        style="color:#00599e">PING检测</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-404" value="http://tool.chinaz.com/Links/?DAddress="
+                                    data-placeholder="请输入网址(不带http://)"><label for="type-404"><span
+                                        style="color:#f00">死链检测</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-ciku" value="http://www.ciku5.com/s?wd="
+                                    data-placeholder="请输入关键词"><label for="type-ciku"><span
+                                        style="color:#016DBD">关键词挖掘</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="search-group group-d"><span class="type-text">社区</span>
+                        <ul class="search-type">
+                            <li><input hidden type="radio" name="type" id="type-zhihu"
+                                    value="https://www.zhihu.com/search?type=content&q=" data-placeholder="知乎"><label
+                                    for="type-zhihu"><span style="color:#0084ff">知乎</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-wechat"
+                                    value="http://weixin.sogou.com/weixin?type=2&query=" data-placeholder="微信"><label
+                                    for="type-wechat"><span style="color:#00a06a">微信</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-weibo" value="http://s.weibo.com/weibo/"
+                                    data-placeholder="微博"><label for="type-weibo"><span style="color:#e6162d">微博</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-douban" value="https://www.douban.com/search?q="
+                                    data-placeholder="豆瓣"><label for="type-douban"><span style="color:#55a300">豆瓣</span></label>
+                            </li>
+                            <li><input hidden type="radio" name="type" id="type-why" value="https://ask.seowhy.com/search/?q="
+                                    data-placeholder="SEO问答社区"><label for="type-why"><span style="color:#428bca">搜外问答</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-group group-e"><span class="type-text">生活</span>
+                        <ul class="search-type">
+                            <li><input hidden type="radio" name="type" id="type-taobao1" value="https://s.taobao.com/search?q="
+                                    data-placeholder="淘宝"><label for="type-taobao1"><span style="color:#f40">淘宝</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-jd" value="https://search.jd.com/Search?keyword="
+                                    data-placeholder="京东"><label for="type-jd"><span style="color:#c91623">京东</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-xiachufang"
+                                    value="http://www.xiachufang.com/search/?keyword=" data-placeholder="下厨房"><label
+                                    for="type-xiachufang"><span style="color:#dd3915">下厨房</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-xiangha"
+                                    value="https://www.xiangha.com/so/?q=caipu&s=" data-placeholder="香哈菜谱"><label
+                                    for="type-xiangha"><span style="color:#930">香哈菜谱</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-12306" value="http://www.12306.cn/?"
+                                    data-placeholder="12306"><label for="type-12306"><span style="color:#07f">12306</span></label>
+                            </li>
+                            <li><input hidden type="radio" name="type" id="type-qunar" value="https://www.qunar.com/?"
+                                    data-placeholder="去哪儿"><label for="type-qunar"><span style="color:#00afc7">去哪儿</span></label>
+                            </li>
+                            <li><input hidden type="radio" name="type" id="type-快递100" value="http://www.kuaidi100.com/?"
+                                    data-placeholder="快递100"><label for="type-快递100"><span
+                                        style="color:#3278e6">快递100</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="search-group group-f"><span class="type-text">求职</span>
+                        <ul class="search-type">
+                            <li><input hidden type="radio" name="type" id="type-zhaopin"
+                                    value="https://sou.zhaopin.com/jobs/searchresult.ashx?kw=" data-placeholder="智联招聘"><label
+                                    for="type-zhaopin"><span style="color:#689fee">智联招聘</span></label></li>
+                            <li><input hidden type="radio" name="type" id="type-51job" value="https://search.51job.com/?"
+                                    data-placeholder="前程无忧"><label for="type-51job"><span style="color:#ff6000">前程无忧</span></label>
+                            </li>
+                            <li><input hidden type="radio" name="type" id="type-lagou" value="https://www.lagou.com/jobs/list_"
+                                    data-placeholder="拉钩网"><label for="type-lagou"><span style="color:#00b38a">拉钩网</span></label>
+                            </li>
+                            <li><input hidden type="radio" name="type" id="type-liepin" value="https://www.liepin.com/zhaopin/?key="
+                                    data-placeholder="猎聘网"><label for="type-liepin"><span style="color:#303a40">猎聘网</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="https://nav.wsoso.com/search/" method="get" target="_blank" id="super-search-fm"><input type="text"
+                        id="search-text" placeholder="输入关键字搜索" style="outline:0"><button type="submit"><i
+                            class="fa fa-search "></i></button></form>
+                <div class="set-check hidden-xs"><input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off">
+                </div>
+            </div>
+            <!--END 搜索框 -->
             <!-- 常用推荐 -->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="常用推荐"></i>常用推荐</h4>
             <div class="row">
@@ -495,17 +642,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
 				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://cn.bing.com', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://cn.bing.com">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.lizhi.io', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.lizhi.io">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
-                                <img src="./assets/images/logos/bing.png" class="img-circle" width="40">
+                                <img src="./assets/images/logos/lizhi-logo@2x.png" class="img-circle" width="40">
                             </a>
                             <span class="label label-info" data-toggle="tooltip" data-placement="left" title="" data-original-title="Hello I am a Tooltip"></span>
                             <div class="xe-comment">
                                 <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>必应搜索</strong>
+                                    <strong>数码荔枝</strong>
                                 </a>
-                                <p class="overflowClip_2">国际领先的搜索引擎</p>
+                                <p class="overflowClip_2">专注于分享最新鲜优秀的正版软件</p>
                             </div>
                         </div>
                     </div>
@@ -4037,7 +4184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <br />
             <!--END 交互设计 -->
             <!-- UED团队 -->
-            <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="UED团队"></i>UED团队</h4>
+            <!--<h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="UED团队"></i>UED团队</h4>
             <div class="row">
                 <div class="col-sm-3">
                     <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://airbnb.design', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://airbnb.design">
@@ -4286,8 +4433,98 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
             </div>
-            <br />
+            <br />-->
             <!--END UED团队 -->
+            <!-- 购物商城 -->
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="购物商城"></i>购物商城</h4>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.jd.com', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.jd.com">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="./assets/images/logos/jd.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>京东商城</strong>
+                                </a>
+                                <p class="overflowClip_2">专业的综合网上购物商城</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.tmall.com', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.tmall.com">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="./assets/images/logos/tmall.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>天猫商城</strong>
+                                </a>
+                                <p class="overflowClip_2">理想生活上天猫</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END 购物商城 -->
+            <!-- 批发采购 -->
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="批发采购"></i>批发采购</h4>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://zgb.jd.com', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://zgb.jd.com">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="./assets/images/logos/zgb.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>京东掌柜宝</strong>
+                                </a>
+                                <p class="overflowClip_2">京东集团旗下一站式B2B订货平台</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://8.1688.com', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://8.1688.com">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="./assets/images/logos/lst.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>阿里零售通</strong>
+                                </a>
+                                <p class="overflowClip_2">阿里巴巴旗下一站式B2B进货平台</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END 批发采购 -->
+            <!-- 精选店铺 -->
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="精选店铺"></i>精选店铺</h4>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.lizhi.io', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.lizhi.io">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="./assets/images/logos/lizhi-logo@2x.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>数码荔枝</strong>
+                                </a>
+                                <p class="overflowClip_2">专注于分享最新鲜优秀的正版软件</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END 精选店铺 -->
             <!-- 本站导航 -->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="本站导航"></i>本站导航</h4>
             <div class="row">
@@ -4325,7 +4562,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <!-- Add your copyright text here -->
                     <div class="footer-text">
                         &copy; 2019
-                        <a href="./about.html"><strong>233导航</strong></a> based on <a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank"><strong>WebStackPage</strong></a> modified by <a href="https://git.dev.tencent.com/zxzz/homepage.git" target="_blank"><strong>Jay</strong></a> 
+                        <a href="./about"><strong>233导航</strong></a> Based on <a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank"><strong>WebStackPage</strong></a> & <a href="https://www.seogo.me" target="_blank"><strong>SEOGO</strong></a> Modified by <a href="https://git.dev.tencent.com/zxzz/homepage.git" target="_blank"><strong>Jay</strong></a> 
                     </div>
                     <!-- Go to Top Link, just add rel="go-top" to any link to add this functionality 
                     <div class="go-up">
@@ -4405,7 +4642,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="./assets/js/xenon-toggles.js"></script>
     <!-- JavaScripts initializations and stuff -->
     <script src="./assets/js/xenon-custom.js"></script>
-	<script src="./assets/js/265.js"></script>
+	<script src="./assets/js/233.js"></script>
 </body>
 
 </html>
