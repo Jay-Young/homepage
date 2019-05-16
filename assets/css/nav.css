@@ -354,7 +354,7 @@ span {
 
 .search-type input:checked+label,
 .search-type input:hover+label {
-    background-color: #fff
+    background-color: rgb(225, 225, 225)
 }
 
 .set-check {
