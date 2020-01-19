@@ -235,6 +235,19 @@
                         </script>
                     </span>
                 </div>
+              	<div id="c_ip" style="padding: 25px 20px;font-size: 15px;color: #979898;">
+                  <span>
+             	<script type="application/javascript">
+                	$(document).ready(function() {
+    					$.getJSON("https://api.ip.sb/jsonip?callback=?",
+        					function(json) {
+            					document.getElementById("c_ip").innerHTML = "当前IP:" + json.ip;
+        					}
+    					);
+					});
+			  	</script>
+                  </span>
+              </div>
                 <script type="text/javascript">WIDGET = { FID: 'ZV7prRhyl5' }</script>
                 <script type="text/javascript" src="./assets/js/weatherdt-float.js"></script>
             </nav>
