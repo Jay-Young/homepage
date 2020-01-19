@@ -215,7 +215,7 @@
                 </ul>
                 <div id="top_info" style="padding: 25px 20px;font-size: 15px;color: #979898;">
                     <span id="c_time">
-                        <script type="application/javascript">
+                        <script type="text/javascript">
                             function c_time() {
                                 var c_date = new Date();
                                 document.getElementById("c_time").innerHTML = c_date.getFullYear() + "年" + (c_date.getMonth() + 1) + "月" + c_date.getDate() + "日" + " 星期" + "日一二三四五六".charAt(c_date.getDay()) + " " + c_date.toTimeString().split(' ')[0];
@@ -224,7 +224,8 @@
                         </script>
                     </span>
                     <span id="c_ip">
-                        <script type="application/javascript">
+                        <script type="text/javascript" src="https://haoip.cn/ipjs"></script>
+                        <!--<script type="application/javascript">
                             $(document).ready(function () {
                                 $.getJSON("https://api.ip.sb/jsonip?callback=?",
                                     function (json) {
@@ -232,7 +233,7 @@
                                     }
                                 );
                             });
-                        </script>
+                        </script>-->
                     </span>
                 </div>
                 <script type="text/javascript">WIDGET = { FID: 'ZV7prRhyl5' }</script>
