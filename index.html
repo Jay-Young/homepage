@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh">
 
 <head>
@@ -224,6 +224,15 @@
                       </script>
                    </span>
                 </div>
+              <script type="application/javascript">
+$(document).ready(function() {
+    $.getJSON("https://api.ip.sb/jsonip?callback=?",
+        function(json) {
+            document.write("My IP address is: ", json.ip);
+        }
+    );
+});
+</script>
                 <script type="text/javascript">WIDGET = { FID: 'ZV7prRhyl5' }</script>
                 <script type="text/javascript" src="./assets/js/weatherdt-float.js"></script>
             </nav>
