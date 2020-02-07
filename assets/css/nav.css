@@ -424,4 +424,12 @@ span {
 }
 
 /* ip地址信息 */
-.haoip{color:#979898;}
+.haoip {
+    color:#979898;
+}
+
+/* 一键黑白 */
+body {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
