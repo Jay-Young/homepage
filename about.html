@@ -113,7 +113,7 @@
             <footer class="main-footer sticky footer-type-1 fixed">
                 <div class="footer-inner">
                     <div class="footer-text">
-                        &copy; 2019
+                        <span id="copyright"></span>
                         <a href="./about"><strong>233导航</strong></a> Based on <a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank"><strong>WebStackPage</strong></a> & <a href="https://www.seogo.me" target="_blank"><strong>SEOGO</strong></a> Modified by <a href="https://git.dev.tencent.com/zxzz/homepage.git" target="_blank"><strong>Jay</strong></a> 
                     </div>
                     <div class="go-up">
@@ -126,6 +126,11 @@
         </div>
     </div>
     <!-- Bottom Scripts -->
+    <!-- 自动更新版权年份开始 -->
+    <script type="text/javascript">
+        document.getElementById('copyright').innerText = '© 2019-' + new Date().getFullYear();
+    </script>
+    <!-- 自动更新版权年份结束  -->
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/TweenMax.min.js"></script>
     <script src="./assets/js/resizeable.js"></script>
