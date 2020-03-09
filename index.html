@@ -273,6 +273,7 @@
             id="top_info"
             style="padding: 25px 20px;font-size: 15px;color: #979898;"
           >
+            <!-- 显示当前时间开始 -->
             <span id="c_time">
               <script type="text/javascript">
                 function c_time() {
@@ -292,22 +293,20 @@
                 setInterval(c_time, 250);
               </script>
             </span>
+            <!-- END 显示当前时间结束 -->
+            <!-- 显示当前IP开始 -->
             <span id="c_ip">
               <script
                 type="text/javascript"
                 src="https://haoip.cn/ipjs"
               ></script>
-              <!--<script type="application/javascript">
-                            $(document).ready(function () {
-                                $.getJSON("https://api.ip.sb/jsonip?callback=?",
-                                    function (json) {
-                                        document.getElementById("c_ip").innerHTML = "当前IP:" + json.ip;
-                                    }
-                                );
-                            });
-                        </script>-->
             </span>
+            <!-- END 显示当前IP结束 -->
+            <!-- 夜间模式开始 -->
+            <span id="swicthNightMode"><a id="icon-switch" href="javascript:switchNightMode()" target="_self"></a></span>
+            <!-- 夜间模式结束 -->
           </div>
+          <!-- 天气代码开始 -->
           <script type="text/javascript">
             WIDGET = { FID: 'ZV7prRhyl5' };
           </script>
@@ -315,6 +314,7 @@
             type="text/javascript"
             src="./assets/js/weatherdt-float.js"
           ></script>
+          <!-- 天气代码结束 -->
         </nav>
         <!-- 搜索框 -->
         <div id="search" class="s-search">
@@ -324,7 +324,7 @@
               <div class="s-type-list animated fadeInUp">
                 <label for="type-baidu">
                   <span class="tile-lg bg-blue">
-                    <i class="fa fa-star-half-full fa-2x m-t-sm"></i> </span
+                    <i class="fa fa-star fa-2x m-t-sm"></i> </span
                   >常用</label
                 >
                 <label for="type-search">
@@ -334,12 +334,12 @@
                 >
                 <label for="type-br">
                   <span class="tile-lg bg-pink">
-                    <i class="fa fa-legal fa-2x m-t-sm"></i> </span
+                    <i class="fa fa-suitcase fa-2x m-t-sm"></i> </span
                   >工具</label
                 >
                 <label for="type-v2ex">
                   <span class="tile-lg bg-yellow">
-                    <i class="fa fa-grav fa-2x m-t-sm"></i> </span
+                    <i class="fa fa-globe fa-2x m-t-sm"></i> </span
                   >社区</label
                 >
                 <label for="type-taobao1">
@@ -394,12 +394,12 @@
                     hidden
                     type="radio"
                     name="type"
-                    id="type-taobao"
-                    value="https://s.taobao.com/search?q="
-                    data-placeholder="淘宝"
+                    id="type-bing"
+                    value="https://cn.bing.com/search?q="
+                    data-placeholder="微软Bing搜索"
                   />
-                  <label for="type-taobao">
-                    <span style="color:#f40">淘宝</span>
+                  <label for="type-bing">
+                    <span style="color:#00809d">Bing</span>
                   </label>
                 </li>
                 <li>
@@ -407,12 +407,25 @@
                     hidden
                     type="radio"
                     name="type"
-                    id="type-bing1"
-                    value="https://cn.bing.com/search?q="
-                    data-placeholder="微软Bing搜索"
+                    id="type-duckduckgo"
+                    value="https://duckduckgo.com/?q="
+                    data-placeholder="DuckDuckGo"
                   />
-                  <label for="type-bing1">
-                    <span style="color:#007daa">Bing</span>
+                  <label for="type-duckduckgo">
+                    <span style="color:#e25b01">冲鸭</span>
+                  </label>
+                </li>
+                <li>
+                  <input
+                    hidden
+                    type="radio"
+                    name="type"
+                    id="type-360"
+                    value="https://www.so.com/s?q="
+                    data-placeholder="360好搜"
+                  />
+                  <label for="type-360">
+                    <span style="color:#19b955">360</span>
                   </label>
                 </li>
                 <li>
@@ -433,12 +446,12 @@
                     hidden
                     type="radio"
                     name="type"
-                    id="type-shodan"
-                    value="https://www.shodan.io/search?query="
-                    data-placeholder="搜索在线设备"
+                    id="type-wechat"
+                    value="https://weixin.sogou.com/weixin?type=2&query="
+                    data-placeholder="搜狗微信搜索"
                   />
-                  <label for="type-shodan">
-                    <span style="color:#272727">SHODAN</span>
+                  <label for="type-wechat">
+                    <span style="color:#00a06a">微信</span>
                   </label>
                 </li>
               </ul>
@@ -482,11 +495,37 @@
                     hidden
                     type="radio"
                     name="type"
-                    id="type-360"
+                    id="type-bing1"
+                    value="https://cn.bing.com/search?q="
+                    data-placeholder="微软Bing搜索"
+                  />
+                  <label for="type-bing1">
+                    <span style="color:#007daa">Bing</span>
+                  </label>
+                </li>
+                <li>
+                  <input
+                    hidden
+                    type="radio"
+                    name="type"
+                    id="type-duckduckgo1"
+                    value="https://duckduckgo.com/?q="
+                    data-placeholder="DuckDuckGo"
+                  />
+                  <label for="type-duckduckgo1">
+                    <span style="color:#e25b01">冲鸭</span>
+                  </label>
+                </li>
+                <li>
+                  <input
+                    hidden
+                    type="radio"
+                    name="type"
+                    id="type-3601"
                     value="https://www.so.com/s?q="
                     data-placeholder="360好搜"
                   />
-                  <label for="type-360">
+                  <label for="type-3601">
                     <span style="color:#19b955">360</span>
                   </label>
                 </li>
@@ -501,19 +540,6 @@
                   />
                   <label for="type-sogo">
                     <span style="color:#ff5943">搜狗</span>
-                  </label>
-                </li>
-                <li>
-                  <input
-                    hidden
-                    type="radio"
-                    name="type"
-                    id="type-bing"
-                    value="https://cn.bing.com/search?q="
-                    data-placeholder="微软Bing搜索"
-                  />
-                  <label for="type-bing">
-                    <span style="color:#007daa">Bing</span>
                   </label>
                 </li>
                 <li>
@@ -540,6 +566,19 @@
                   />
                   <label for="type-mj">
                     <span style="color:#4e4e4e">秘迹</span>
+                  </label>
+                </li>
+                <li>
+                  <input
+                    hidden
+                    type="radio"
+                    name="type"
+                    id="type-yandex"
+                    value="https://yandex.com/search/?text="
+                    data-placeholder="Yandex"
+                  />
+                  <label for="type-yandex">
+                    <span style="color:#ffdb4d">Yandex</span>
                   </label>
                 </li>
               </ul>
@@ -635,6 +674,32 @@
                     hidden
                     type="radio"
                     name="type"
+                    id="type-stackoverflow"
+                    value="https://stackoverflow.com/search?q="
+                    data-placeholder="StackOverflow"
+                  />
+                  <label for="type-stackoverflow">
+                    <span style="color:#f48024">SOF</span>
+                  </label>
+                </li>
+                <li>
+                  <input
+                    hidden
+                    type="radio"
+                    name="type"
+                    id="type-segmentfault"
+                    value="https://segmentfault.com/search?q="
+                    data-placeholder="SegmentFault"
+                  />
+                  <label for="type-segmentfault">
+                    <span style="color:#009a61">思否</span>
+                  </label>
+                </li>
+                <li>
+                  <input
+                    hidden
+                    type="radio"
+                    name="type"
                     id="type-v2ex"
                     value="https://www.google.com/search?q=site:v2ex.com/t%20"
                     data-placeholder="V2EX"
@@ -661,11 +726,11 @@
                     hidden
                     type="radio"
                     name="type"
-                    id="type-wechat"
-                    value="http://weixin.sogou.com/weixin?type=2&query="
-                    data-placeholder="微信"
+                    id="type-wechat1"
+                    value="https://weixin.sogou.com/weixin?type=2&query="
+                    data-placeholder="搜狗微信搜索"
                   />
-                  <label for="type-wechat">
+                  <label for="type-wechat1">
                     <span style="color:#00a06a">微信</span>
                   </label>
                 </li>
@@ -675,7 +740,7 @@
                     type="radio"
                     name="type"
                     id="type-weibo"
-                    value="http://s.weibo.com/weibo/"
+                    value="https://s.weibo.com/weibo/"
                     data-placeholder="微博"
                   />
                   <label for="type-weibo">
@@ -4187,8 +4252,7 @@
           <div class="footer-inner">
             <!-- Add your copyright text here -->
             <div class="footer-text">
-              <span id="timeDate"></span>
-              <span id="times"></span>
+              <span id="siteLifeTime"></span>
               <p></p>
               <span id="copyright"></span>
               <a href="./about"><strong>233导航</strong></a> Based on
@@ -4219,9 +4283,9 @@
     <!-- 锚点平滑移动 -->
     <script type="text/javascript">
       $(document).ready(function() {
-         //img lazy loaded
-         const observer = lozad();
-         observer.observe();
+        //img lazy loaded
+        const observer = lozad();
+        observer.observe();
 
         $(document).on('click', '.has-sub', function() {
           var _this = $(this);

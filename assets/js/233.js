@@ -184,9 +184,130 @@ function createtime() {
   if (String(snum).length == 1) {
     snum = '0' + snum;
   }
-  document.getElementById('timeDate').innerHTML = '本站已上线运行: ' + dnum + '天';
-  document.getElementById('times').innerHTML =
-    hnum + '小时' + mnum + '分' + snum + '秒';
+  document.getElementById('siteLifeTime').innerHTML =
+    '本站已上线运行：<font style=color:#C40000>' +
+    dnum +
+    '</font> 天 <font style=color:#C40000>' +
+    hnum +
+    '</font> 小时 <font style=color:#C40000>' +
+    mnum +
+    '</font> 分 <font style=color:#C40000>' +
+    snum +
+    '</font> 秒';
 }
 setInterval('createtime()', 250);
 //网站运行时间结束
+
+//自动夜间模式
+
+(function() {
+  if (
+    document.cookie.replace(
+      /(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/,
+      '$1'
+    ) === ''
+  ) {
+    if (new Date().getHours() > 22 || new Date().getHours() < 6) {
+      document.body.classList.add('night');
+      document.cookie = 'night=1;path=/';
+      console.log('夜间模式开启');
+    } else {
+      document.body.classList.remove('night');
+      document.cookie = 'night=0;path=/';
+      console.log('夜间模式关闭');
+    }
+  } else {
+    var night =
+      document.cookie.replace(
+        /(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/,
+        '$1'
+      ) || '0';
+    if (night == '0') {
+      document.body.classList.remove('night');
+    } else if (night == '1') {
+      document.body.classList.add('night');
+    }
+  }
+})();
+
+//夜间模式提示文字
+function switchNightModePromot() {
+  var night =
+    document.cookie.replace(
+      /(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/,
+      '$1'
+    ) || '0';
+  if (night == '0') {
+    document.getElementById(
+      'icon-switch'
+    ).innerHTML = `<svg id="icon-sun" viewBox="0 0 1024 1024"><path d="M512 512m-380.4 0a380.4 380.4 0 1 0 760.8 0 380.4 380.4 0 1 0-760.8 0Z" fill="#FFB948" p-id="7004" data-spm-anchor-id="a313x.7781069.0.i4"></path><path d="M512 512m-273.4 0a273.4 273.4 0 1 0 546.8 0 273.4 273.4 0 1 0-546.8 0Z" fill="#FFB948" p-id="7005"></path></svg>`;
+    document.getElementById('swicthNightMode').title = '切换夜间模式';
+  } else {
+    document.getElementById(
+      'icon-switch'
+    ).innerHTML = `<svg id="icon-yueliang" viewBox="0 0 1024 1024"><path d="M574.049837 1023.363002C833.211234 1000.689318 1027.89473 780.852556 1027.759754 525.275556c-2.170885-24.813325-25.91564-42.182903-50.728965-40.012018-13.785181 1.206047-27.087943 7.926166-34.394213 19.677939-50.075325 62.721947-123.895405 108.074316-209.363526 115.551808-168.179204 14.713774-315.334445-111.318772-330.048219-279.497977-7.718701-88.225156 21.368905-168.557891 77.199512-229.00522 7.54748-8.994737 11.855505-23.262336 10.649458-37.047517-2.170885-24.813325-23.158603-42.424112-48.213138-43.010264-251.717649 44.247555-431.409918 276.663451-408.495024 538.581884 23.638522 270.189541 266.73762 476.728543 539.684198 452.848811z" fill="#FFB948"></path></svg>`;
+    document.getElementById('swicthNightMode').title = '返回白天模式';
+  }
+}
+setInterval('switchNightModePromot()', 250);
+
+//夜间模式切换
+function switchNightMode() {
+  var night =
+    document.cookie.replace(
+      /(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/,
+      '$1'
+    ) || '0';
+  if (night == '0') {
+    document.body.classList.add('night');
+    document.cookie = 'night=1;path=/';
+    console.log('夜间模式开启');
+  } else {
+    document.body.classList.remove('night');
+    document.cookie = 'night=0;path=/';
+    console.log('夜间模式关闭');
+  }
+}
+
+//全屏切换
+//控制全屏
+function enterfullscreen() {
+  //进入全屏
+  $('#fullscreen').html(' ');
+  var docElm = document.documentElement;
+  //W3C
+  if (docElm.requestFullscreen) {
+    docElm.requestFullscreen();
+  }
+  //FireFox
+  else if (docElm.mozRequestFullScreen) {
+    docElm.mozRequestFullScreen();
+  }
+  //Chrome等
+  else if (docElm.webkitRequestFullScreen) {
+    docElm.webkitRequestFullScreen();
+  }
+  //IE11
+  else if (elem.msRequestFullscreen) {
+    elem.msRequestFullscreen();
+  }
+}
+function exitfullscreen() {
+  //退出全屏
+  $('#fullscreen').html(' ');
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitCancelFullScreen) {
+    document.webkitCancelFullScreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+}
+
+var a = 0;
+$('#fullscreen').on('click', function() {
+  a++;
+  a % 2 == 1 ? enterfullscreen() : exitfullscreen();
+});
