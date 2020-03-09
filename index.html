@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh">
   <head>
     <meta charset="utf-8" />
@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="./assets/css/xenon-components.css" />
     <link rel="stylesheet" href="./assets/css/xenon-skins.css" />
     <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/fk_service.min.css" />
     <script src="./assets/js/jquery-1.11.1.min.js"></script>
     <script>
       var _hmt = _hmt || [];
@@ -303,7 +304,14 @@
             </span>
             <!-- END 显示当前IP结束 -->
             <!-- 夜间模式开始 -->
-            <span id="swicthNightMode"><a id="icon-switch" href="javascript:switchNightMode()" target="_self"></a></span>
+            <span id="swicthNightMode"
+              ><a id="icon-switch" onclick="switchNightMode()" target="_self"
+                ><svg id="icon-yueliang" viewBox="0 0 1024 1024">
+                  <path
+                    d="M574.049837 1023.363002C833.211234 1000.689318 1027.89473 780.852556 1027.759754 525.275556c-2.170885-24.813325-25.91564-42.182903-50.728965-40.012018-13.785181 1.206047-27.087943 7.926166-34.394213 19.677939-50.075325 62.721947-123.895405 108.074316-209.363526 115.551808-168.179204 14.713774-315.334445-111.318772-330.048219-279.497977-7.718701-88.225156 21.368905-168.557891 77.199512-229.00522 7.54748-8.994737 11.855505-23.262336 10.649458-37.047517-2.170885-24.813325-23.158603-42.424112-48.213138-43.010264-251.717649 44.247555-431.409918 276.663451-408.495024 538.581884 23.638522 270.189541 266.73762 476.728543 539.684198 452.848811z"
+                    fill="#FFB948"
+                  ></path></svg></a
+            ></span>
             <!-- 夜间模式结束 -->
           </div>
           <!-- 天气代码开始 -->
@@ -963,7 +971,7 @@
               <div class="xe-comment-entry">
                 <a class="xe-user-img">
                   <img
-                    data-src="./assets/images/logos/Asuswrt-Merlin-smaller.png"
+                    data-src="./assets/images/logos/ASUS_router.jpg"
                     class="lozad img-circle"
                     width="40"
                   />
@@ -4220,30 +4228,6 @@
         </div>
         <br />
         <!--END 本站导航 -->
-        <section class="side_btn active">
-          <a
-            class="btn top"
-            id="back-to-top"
-            href="#top"
-            title="返回顶部"
-            rel="external nofollow"
-          >
-            <svg
-              t="1510297521288"
-              class="icon"
-              viewBox="0 0 1024 1024"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              p-id="1965"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <path
-                d="M745.65898437 533.84433594l-416.32822265 416.32822265c-6.66298828 6.66298828-15.86689453 10.78330078-26.03408203 10.78330079-20.33349609 0-36.81738281-16.48388672-36.81738282-36.81738282 0-10.1671875 4.12119141-19.37109375 10.78330079-26.03408203l394.49355468-394.49355469-381.82675781-381.89707031c-6.07763672-6.2859375-9.82265625-14.86054687-9.82265625-24.30878906 0-19.32539062 15.66650391-34.99189453 34.99189453-34.99189453 9.44912109 0 18.02285156 3.74501953 24.31845703 9.83144531l395.88398438 395.88398438c4.78740234 4.87265625 8.14042969 11.16914062 9.36738281 18.19599609-0.759375-4.89814453 0.29003906-5.52919922 0.99052734-4.47978516 6.64277344 6.65859375 10.75078125 15.8484375 10.75078125 25.99892578 0 10.14960938-4.10800781 19.34033203-10.75166015 25.99892578z"
-              ></path>
-            </svg>
-            <span>返回顶部</span>
-          </a>
-        </section>
         <!-- Main Footer -->
         <!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
         <!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
@@ -4362,5 +4346,142 @@
     <script src="./assets/js/xenon-custom.js"></script>
     <script src="./assets/js/lozad.js"></script>
     <script src="./assets/js/233.js"></script>
+    <!--仿凡科 右侧悬浮窗 by:zmki   zmki.cn 2020年2月9日17:03:13-->
+    <div class="wapnone fk_service">
+      <ul>
+        <!-- <li>
+          <div class="fk_service_consult_cont1" style="display: none;">
+            <span class="fk_service_triangle"></span> 在线咨询
+          </div>
+        </li> -->
+        <li class="fk_service_box fk_service_consult">
+          <div class="fk_service_consult_cont">
+            <span class="fk_service_triangle"></span>
+            <div class="fk_service_consult_cont_top">
+              <span class="fk_service_hint">
+                <span class="fk_service_icon"></span>
+                <span> 如遇问题，请联系站长 </span>
+              </span>
+              <span
+                class="fk_service_button"
+                onclick="window.open('https://weibo.com/jayyoung1')"
+                >关注微博</span
+              >
+              <span
+                class="fk_service_button"
+                onclick="window.open('https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=jayyoung1heaven@gmail.com')"
+                >在线邮件</span
+              >
+            </div>
+            <!-- <span class="fk_service_phone"> QQ 请注明来意 ：20838641 </span>
+            <span class="fk_service_check_site">
+              <span class="fk_service_icon"></span>
+              <span onclick="window.open('http://tool.zmki.cn')"
+                >更多：极客导航</span
+              >
+            </span> -->
+          </div>
+        </li>
+
+        <!-- <li class="fk_service_box fk_service_qr">
+          <div class="fk_service_qr_cont">
+            <span class="fk_service_triangle"></span>
+            <div class="fk_service_qrimg">
+              <span class="fk_service_qrimg_site"></span> 微信公众号
+            </div>
+            <div class="fk_service_qrtext">
+              <span>奇思妙想 · 科技小新</span>
+            </div>
+          </div>
+        </li>
+
+        <li
+          class="fk_service_box fk_service_ax"
+          onclick="window.open('https://tool.zmki.cn/index.php/t.html')"
+        >
+          <div class="fk_service_ax_cont">
+            <span class="fk_service_triangle"></span>
+            提交收录，站长收到留言后即刻处理！
+          </div>
+        </li>
+
+        <li
+          class="fk_service_box fk_service_dh"
+          onclick="window.open('https://tool.zmki.cn/index.php/t.html')"
+        >
+          <div class="fk_service_dh_cont">
+            <span class="fk_service_triangle"></span>
+            提交收录，站长收到留言后即刻处理！
+          </div>
+        </li>
+
+        <li
+          class="fk_service_box fk_service_jk"
+          onclick="window.open('https://tool.zmki.cn/index.php/t.html')"
+        >
+          <div class="fk_service_jk_cont">
+            <span class="fk_service_triangle"></span>
+            提交收录，站长收到留言后即刻处理！
+          </div>
+        </li>
+
+        <li
+          class="fk_service_box fk_service_ws"
+          onclick="window.open('https://tool.zmki.cn/index.php/t.html')"
+        >
+          <div class="fk_service_ws_cont">
+            <span class="fk_service_triangle"></span>
+            提交收录，站长收到留言后即刻处理！
+          </div>
+        </li>
+
+        <li
+          class="fk_service_box fk_service_sd"
+          onclick="window.open('https://tool.zmki.cn/index.php/t.html')"
+        >
+          <div class="fk_service_sd_cont">
+            <span class="fk_service_triangle"></span>
+            提交收录，站长收到留言后即刻处理！
+          </div>
+        </li>
+
+        <li
+          class="fk_service_box fk_service_dz"
+          onclick="window.open('https://tool.zmki.cn/index.php/t.html')"
+        >
+          <div class="fk_service_dz_cont">
+            <span class="fk_service_triangle"></span>
+            提交收录，站长收到留言后即刻处理！
+          </div>
+        </li>
+
+        <li
+          class="fk_service_box fk_service_feedback"
+          onclick="window.open('https://tool.zmki.cn/index.php/t.html')"
+        >
+          <div class="fk_service_feedback_cont">
+            <span class="fk_service_triangle"></span>
+            提交收录，站长收到留言后即刻处理！
+          </div>
+        </li> -->
+
+        <li
+          class="fk_service_box fk_service_upward"
+          onclick="document.getElementById('01').click();"
+          style="display: block;"
+        >
+          <a
+            id="01"
+            href="/#"
+            rel="go-top"
+            class="fk_service_box fk_service_upward "
+            >1</a
+          >
+          <div class="fk_service_upward_cont">
+            <span class="fk_service_triangle"></span> <span> 返回顶部 </span>
+          </div>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
