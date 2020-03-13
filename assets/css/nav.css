@@ -602,3 +602,8 @@ body.night img {
   fill: currentColor;
   overflow: hidden;
 }
+
+/* adult content highlight color */
+.adult {
+  color: hotpink;
+}
