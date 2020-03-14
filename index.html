@@ -14,7 +14,10 @@
       name="description"
       content="收集国内外优秀的社区、资讯、影视、音乐、游戏、开发、安全、购物网址，提供简洁优雅的上网导航服务，定时更新分享计算机开发学习教程。"
     />
-    <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/images/favicon.png" />
+    <link
+      rel="shortcut icon"
+      href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/images/favicon.png"
+    />
     <link
       rel="stylesheet"
       href="//fonts.googleapis.com/css?family=Arimo:400,700,400italic"
@@ -27,19 +30,37 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/fonts/fontawesome/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/xenon-core.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/xenon-components.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/xenon-skins.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/nav.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/fk_service.min.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/xenon-core.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/xenon-components.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/xenon-skins.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/nav.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/css/fk_service.min.css"
+    />
     <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/js/jquery-1.11.1.min.js"></script>
     <script>
       var _hmt = _hmt || [];
       (function() {
-        var hm = document.createElement('script');
-        hm.src = 'https://hm.baidu.com/hm.js?b810c44f92d90fa302ad3eae11c845a6';
-        var s = document.getElementsByTagName('script')[0];
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?b810c44f92d90fa302ad3eae11c845a6";
+        var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
       })();
     </script>
@@ -92,7 +113,11 @@
             <!-- logo -->
             <div class="logo">
               <a href="./" class="logo-expanded">
-                <img src="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/images/logo@2x.png" height="100%" alt="" />
+                <img
+                  src="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/images/logo@2x.png"
+                  height="100%"
+                  alt=""
+                />
               </a>
               <a href="./" class="logo-collapsed">
                 <img
@@ -294,17 +319,17 @@
               <script type="text/javascript">
                 function c_time() {
                   var c_date = new Date();
-                  document.getElementById('c_time').innerHTML =
+                  document.getElementById("c_time").innerHTML =
                     c_date.getFullYear() +
-                    '年' +
+                    "年" +
                     (c_date.getMonth() + 1) +
-                    '月' +
+                    "月" +
                     c_date.getDate() +
-                    '日' +
-                    ' 星期' +
-                    '日一二三四五六'.charAt(c_date.getDay()) +
-                    ' ' +
-                    c_date.toTimeString().split(' ')[0];
+                    "日" +
+                    " 星期" +
+                    "日一二三四五六".charAt(c_date.getDay()) +
+                    " " +
+                    c_date.toTimeString().split(" ")[0];
                 }
                 setInterval(c_time, 250);
               </script>
@@ -312,10 +337,7 @@
             <!-- END 显示当前时间结束 -->
             <!-- 显示当前IP开始 -->
             <span id="c_ip">
-              <script
-                type="text/javascript"
-                src="//haoip.cn/ipjs"
-              ></script>
+              <script type="text/javascript" src="//haoip.cn/ipjs"></script>
             </span>
             <!-- END 显示当前IP结束 -->
             <!-- 夜间模式开始 -->
@@ -328,10 +350,14 @@
                   ></path></svg></a
             ></span>
             <!-- 夜间模式结束 -->
+            <!-- Start covid19 -->
+            <span id="covid19" style="margin-left: 15px;"></span>
+            <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage@master/assets/js/ajax.js"></script>
+            <!-- End convid19 -->
           </div>
           <!-- 天气代码开始 -->
           <script type="text/javascript">
-            WIDGET = { FID: 'ZV7prRhyl5' };
+            WIDGET = { FID: "ZV7prRhyl5" };
           </script>
           <script
             type="text/javascript"
@@ -5009,67 +5035,67 @@
         const observer = lozad();
         observer.observe();
 
-        $(document).on('click', '.has-sub', function() {
+        $(document).on("click", ".has-sub", function() {
           var _this = $(this);
-          if (!$(this).hasClass('expanded')) {
+          if (!$(this).hasClass("expanded")) {
             setTimeout(function() {
-              _this.find('ul').attr('style', '');
+              _this.find("ul").attr("style", "");
             }, 300);
           } else {
-            $('.has-sub ul').each(function(id, ele) {
+            $(".has-sub ul").each(function(id, ele) {
               var _that = $(this);
-              if (_this.find('ul')[0] != ele) {
+              if (_this.find("ul")[0] != ele) {
                 setTimeout(function() {
-                  _that.attr('style', '');
+                  _that.attr("style", "");
                 }, 300);
               }
             });
           }
         });
-        $('.user-info-menu .hidden-sm').click(function() {
-          if ($('.sidebar-menu').hasClass('collapsed')) {
-            $('.has-sub.expanded > ul').attr('style', '');
+        $(".user-info-menu .hidden-sm").click(function() {
+          if ($(".sidebar-menu").hasClass("collapsed")) {
+            $(".has-sub.expanded > ul").attr("style", "");
           } else {
-            $('.has-sub.expanded > ul').show();
+            $(".has-sub.expanded > ul").show();
           }
         });
-        $('#main-menu li ul li').click(function() {
+        $("#main-menu li ul li").click(function() {
           $(this)
-            .siblings('li')
-            .removeClass('active'); // 删除其他兄弟元素的样式
-          $(this).addClass('active'); // 添加当前元素的样式
+            .siblings("li")
+            .removeClass("active"); // 删除其他兄弟元素的样式
+          $(this).addClass("active"); // 添加当前元素的样式
         });
-        $('a.smooth').click(function(ev) {
+        $("a.smooth").click(function(ev) {
           ev.preventDefault();
 
           public_vars.$mainMenu
             .add(public_vars.$sidebarProfile)
-            .toggleClass('mobile-is-visible');
+            .toggleClass("mobile-is-visible");
           ps_destroy();
-          $('html, body').animate(
+          $("html, body").animate(
             {
-              scrollTop: $($(this).attr('href')).offset().top - 30
+              scrollTop: $($(this).attr("href")).offset().top - 30
             },
             {
               duration: 500,
-              easing: 'swing'
+              easing: "swing"
             }
           );
         });
         return false;
       });
 
-      var href = '';
+      var href = "";
       var pos = 0;
-      $('a.smooth').click(function(e) {
-        $('#main-menu li').each(function() {
-          $(this).removeClass('active');
+      $("a.smooth").click(function(e) {
+        $("#main-menu li").each(function() {
+          $(this).removeClass("active");
         });
         $(this)
-          .parent('li')
-          .addClass('active');
+          .parent("li")
+          .addClass("active");
         e.preventDefault();
-        href = $(this).attr('href');
+        href = $(this).attr("href");
         pos = $(href).position().top - 30;
       });
     </script>

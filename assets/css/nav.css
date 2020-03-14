@@ -238,7 +238,7 @@ span {
   position: absolute;
   top: -1pc;
   left: 10px;
-  content: ' ';
+  content: " ";
   display: block;
   width: 0;
   height: 0;
@@ -325,7 +325,7 @@ span {
 }
 
 .type-text:after {
-  content: '\f105';
+  content: "\f105";
   font-family: FontAwesome;
   margin: 0 0 0 15px;
 }
