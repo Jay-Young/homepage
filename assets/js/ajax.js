@@ -1,7 +1,7 @@
 async function getData() {
   // 获取 response
   const response = await fetch(
-    '//cdn.jsdelivr.net/gh/BlankerL/DXY-COVID-19-Data@master/json/DXYArea.json'
+    '//cdn.jsdelivr.net/gh/BlankerL/DXY-COVID-19-Data@latest/json/DXYArea.json'
   );
   // 获取结果 JSON
   const posts = await response.json();
@@ -18,12 +18,12 @@ async function getData() {
     const cities = yourProvince.cities;
     const yourCity = getCity(cities, city);
     document.getElementById('covid19').innerHTML =
-      city + '现存确诊患者：' + yourCity.currentConfirmedCount + '<a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank" style="color: #979898">（数据来源：丁香园）</a>';
+      city + '现存确诊患者：' + yourCity.currentConfirmedCount + '<a href="//ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank" style="color: #979898">（数据来源：丁香园）</a>';
   } else {// 境外地区
     const province = geo[4];
     const yourProvince = getProvince(results, province);
     document.getElementById('covid19').innerHTML =
-      province + '现存确诊患者：' + yourProvince.currentConfirmedCount + '<a href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank" style="color: #979898">（数据来源：丁香园）</a>';
+      province + '现存确诊患者：' + yourProvince.currentConfirmedCount + '<a href="//ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank" style="color: #979898">（数据来源：丁香园）</a>';
   }
 
   // 获取省份

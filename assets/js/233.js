@@ -305,3 +305,13 @@ $("#fullscreen").on("click", function() {
   a++;
   a % 2 == 1 ? enterfullscreen() : exitfullscreen();
 });
+
+function fk_upWard() {
+  var g = window.$;
+  if (g) {
+    $("body,html").animate({ scrollTop: 0 });
+  } else {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }
+}
