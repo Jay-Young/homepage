@@ -1,7 +1,7 @@
 async function getData() {
   // 获取 response
   const response = await fetch(
-    '//raw.githubusercontent.com/BlankerL/DXY-COVID-19-Data/master/json/DXYArea.json'
+    '//cdn.jsdelivr.net/gh/BlankerL/DXY-COVID-19-Data/json/DXYArea.json'
   );
   // 获取结果 JSON
   const posts = await response.json();
