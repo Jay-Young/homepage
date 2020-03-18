@@ -639,6 +639,44 @@
 
 /*点赞 新增图标->zmki 结束*/
 
+/* 暗黑 新增图标->zmki 开始*/
+.fk_service_zmkiah {
+	z-index: 555;
+	background: url(https://a-oss.zmki.cn/2020/20200209-8bab92321b7d9.png) no-repeat center center #fff;
+	background-size: 50%50%;
+}
+
+.fk_service_zmkiah:hover {
+	border: 0;
+	background: url(https://a-oss.zmki.cn/2020/20200209-838b4c0ed71c3.png) no-repeat center center #4f7cfc;
+	background-size: 50%50%;
+	cursor: pointer
+}
+
+.fk_service_zmkiah:hover .fk_service_zmkiah_cont {
+	display: block;
+	opacity: 1;
+	transition: linear .2s;
+	animation-name: fade-in;
+	animation-duration: .3s;
+	animation-iteration-count: 1;
+	animation-delay: 0s
+}
+
+.fk_service_zmkiah_cont {
+	width: 264px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	border-radius: 5px;
+	right: 62px;
+	text-align: center;
+	position: absolute;
+	display: none;
+	border: 1px solid #e1e6ec
+}
+
+
 /* 手机端自动隐藏 开始 */
 @media screen and (max-width: 1221px) {
   .wapnone {
