@@ -1,8 +1,8 @@
 async function getData() {
+  var timeStamp = new Date().getTime();
+  var jsonUrl = '//cdn.jsdelivr.net/gh/BlankerL/DXY-COVID-19-Data/json/DXYArea.json?' + timeStamp;
   // 获取 response
-  const response = await fetch(
-    '//cdn.jsdelivr.net/gh/BlankerL/DXY-COVID-19-Data/json/DXYArea.json'
-  );
+  const response = await fetch(jsonUrl);
   // 获取结果 JSON
   const posts = await response.json();
   // 获取数据

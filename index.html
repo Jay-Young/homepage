@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh">
   <head>
     <meta charset="utf-8" />
@@ -352,13 +352,7 @@
             <!-- 夜间模式结束 -->
             <!-- Start covid19 -->
             <span id="covid19" style="margin-left: 10px;"></span>
-            <script id="covid19-js" onload="getData()"></script>
-            <script>
-              var timeStamp = new Date().getTime();
-              document.getElementById('covid19-js').src =
-                '//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/ajax.min.js?' +
-                timeStamp;
-            </script>
+            <script id="covid19-js" src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/ajax.min.js" onload="getData()"></script>
             <!-- End convid19 -->
           </div>
           <!-- 天气代码开始 -->
@@ -5009,7 +5003,7 @@
               <div class="xe-comment-entry">
                 <a class="xe-user-img">
                   <img
-                    data-src="./assets/images/logos/myblog.png"
+                    data-src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/logos/myblog.png"
                     class="lozad img-circle"
                     width="40"
                   />
