@@ -431,13 +431,13 @@ span {
 }
 
 /* 一键黑白 */
-/*body {
+body {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
-}*/
+}
 
 /* 夜间模式 */
 body.night .board {
