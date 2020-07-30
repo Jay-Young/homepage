@@ -82,13 +82,13 @@
 }
 
 .fk_service_consult {
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -366px -16px #fff;
 }
 
 .fk_service_consult:hover {
   border: 0;
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -410px -16px #4f7cfc;
 }
 
@@ -159,7 +159,7 @@
 }
 
 .fk_service_hint > .fk_service_icon {
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -460px -25px;
   width: 15px;
   height: 15px;
@@ -200,7 +200,7 @@
 }
 
 .fk_service_check_site > .fk_service_icon {
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -461px -75px;
   width: 20px;
   height: 20px;
@@ -208,13 +208,13 @@
 }
 
 .fk_service_feedback {
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -363px -64px #fff;
 }
 
 .fk_service_feedback:hover {
   border: 0;
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -407px -64px #4f7cfc;
   cursor: pointer;
 }
@@ -243,13 +243,13 @@
 }
 
 .fk_service_qr {
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -365px -113px #fff;
 }
 
 .fk_service_qr:hover {
   border: 0;
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -409px -113px #4f7cfc;
 }
 
@@ -292,7 +292,7 @@
   height: 119px;
   float: left;
   margin: 12px 12px 5px 12px;
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -41px -26px;
 }
 
@@ -301,7 +301,7 @@
   height: 119px;
   float: left;
   margin: 12px 12px 5px 12px;
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -198px -26px;
 }
 
@@ -318,7 +318,7 @@
   height: 119px;
   float: left;
   margin: 12px 12px 5px 12px;
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -41px -177px;
 }
 
@@ -327,7 +327,7 @@
   height: 119px;
   float: left;
   margin: 12px 12px 5px 12px;
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -198px -177px;
 }
 
@@ -336,7 +336,7 @@
   height: 119px;
   float: left;
   margin: 12px 12px 5px 12px;
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -41px -326px;
 }
 
@@ -358,13 +358,13 @@
 
 .fk_service_upward {
   display: none;
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -363px -159px #fff;
 }
 
 .fk_service_upward:hover {
   border: 0;
-  background: url(https://a-oss.zmki.cn/2019/20190827-5d652476ab305.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_consult.png)
     no-repeat -407px -159px #4f7cfc;
   cursor: pointer;
 }
@@ -400,7 +400,7 @@
 /* 新增图标->zmki 开始*/
 .fk_service_jk {
   /* 前景图标 */
-  background: url(https://a-oss.zmki.cn/2019/20191218-c9feba3074fcf.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_jk.png)
     no-repeat center center #fff;
   background-size: 40%40%;
 }
@@ -408,7 +408,7 @@
 .fk_service_jk:hover {
   border: 0;
   /* 鼠标悬浮图标 */
-  background: url(https://a-oss.zmki.cn/2019/20191218-9e8acd5341cdc.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/fk_service_jk_hover.png)
     no-repeat center center #4f7cfc;
   background-size: 40%40%;
   cursor: pointer;
@@ -441,14 +441,14 @@
 
 /* 新增图标->zmki 开始*/
 .fk_service_ws {
-  background: url(https://a-oss.zmki.cn/2019/20191218-61b4baac98ee7.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20191218-61b4baac98ee7.png)
     no-repeat center center #fff;
   background-size: 50%50%;
 }
 
 .fk_service_ws:hover {
   border: 0;
-  background: url(https://a-oss.zmki.cn/2019/20191218-8ded04c01bb3c.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20191218-8ded04c01bb3c.png)
     no-repeat center center #4f7cfc;
   background-size: 50%50%;
   cursor: pointer;
@@ -481,14 +481,14 @@
 
 /* 闪电 新增图标->zmki 开始*/
 .fk_service_sd {
-  background: url(https://a-oss.zmki.cn/2019/20191218-94664bd399372.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20191218-94664bd399372.png)
     no-repeat center center #fff;
   background-size: 50%50%;
 }
 
 .fk_service_sd:hover {
   border: 0;
-  background: url(https://a-oss.zmki.cn/2019/20191218-fab840acee28b.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20191218-fab840acee28b.png)
     no-repeat center center #4f7cfc;
   background-size: 50%50%;
   cursor: pointer;
@@ -521,14 +521,14 @@
 
 /* 导航 新增图标->zmki 开始*/
 .fk_service_dh {
-  background: url(https://a-oss.zmki.cn/2019/20191218-711bcdc875f32.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20191218-711bcdc875f32.png)
     no-repeat center center #fff;
   background-size: 60%60%;
 }
 
 .fk_service_dh:hover {
   border: 0;
-  background: url(https://a-oss.zmki.cn/2019/20191218-8d9cf4c72a239.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20191218-8d9cf4c72a239.png)
     no-repeat center center #4f7cfc;
   background-size: 60%60%;
   cursor: pointer;
@@ -561,14 +561,14 @@
 
 /* 爱心 新增图标->zmki 开始*/
 .fk_service_ax {
-  background: url(https://a-oss.zmki.cn/2019/20191218-bf1792e790a39.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20191218-bf1792e790a39.png)
     no-repeat center center #fff;
   background-size: 40%40%;
 }
 
 .fk_service_ax:hover {
   border: 0;
-  background: url(https://a-oss.zmki.cn/2019/20191218-f379809ce7aef.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20191218-f379809ce7aef.png)
     no-repeat center center #4f7cfc;
   background-size: 40%40%;
   cursor: pointer;
@@ -601,14 +601,14 @@
 
 /* 点赞 新增图标->zmki 开始*/
 .fk_service_dz {
-  background: url(https://a-oss.zmki.cn/2019/20191218-3d077e8df0bf0.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20191218-3d077e8df0bf0.png)
     no-repeat center center #fff;
   background-size: 50%50%;
 }
 
 .fk_service_dz:hover {
   border: 0;
-  background: url(https://a-oss.zmki.cn/2019/20191218-986a9393f3e9e.png)
+  background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20191218-986a9393f3e9e.png)
     no-repeat center center #4f7cfc;
   background-size: 50%50%;
   cursor: pointer;
