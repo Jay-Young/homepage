@@ -642,13 +642,13 @@
 /* 暗黑 新增图标->zmki 开始*/
 .fk_service_zmkiah {
 	z-index: 555;
-	background: url(https://a-oss.zmki.cn/2020/20200209-8bab92321b7d9.png) no-repeat center center #fff;
+	background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20200209-8bab92321b7d9.png) no-repeat center center #fff;
 	background-size: 50%50%;
 }
 
 .fk_service_zmkiah:hover {
 	border: 0;
-	background: url(https://a-oss.zmki.cn/2020/20200209-838b4c0ed71c3.png) no-repeat center center #4f7cfc;
+	background: url(//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/fk_service/20200209-838b4c0ed71c3.png) no-repeat center center #4f7cfc;
 	background-size: 50%50%;
 	cursor: pointer
 }
