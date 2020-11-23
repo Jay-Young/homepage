@@ -1,4 +1,6 @@
 console.log("%c\n Cloudflare %c\u767e\u5ea6\u4e91 %c\u5408\u4f5c\u8282\u70b9 %c\n 162.159.208.4 >%c> 162.159.208.103 %c\n 162.159.209.4 >%c> 162.159.209.103 %c\n 162.159.210.4 >%c> 162.159.210.103 %c\n 162.159.211.4 >%c> 162.159.211.103 \n","color:rgb(243, 128, 32);padding:5px 0;","color:#38f;padding:5px 0;","padding:5px 0;","color:#444;background:#eee;padding:5px 0;","color:#fff;background:#876;padding:5px 0;","color:#444;background:#eee;padding:5px 0;","color:#fff;background:#876;padding:5px 0;","color:#444;background:#eee;padding:5px 0;","color:#fff;background:#876;padding:5px 0;","color:#444;background:#eee;padding:5px 0;","color:#fff;background:#876;padding:5px 0;");
+console.log("%c\n清除密钥激活: %c\nslmgr /upk && slmgr /ckms && slmgr /rearm","color:#38f;padding:5px 0;border:none","color:#444;background:#eee;padding:5px 0;");
+console.log("%c\n设置KMS激活: %c\nslmgr /skms kms.03k.org && slmgr /ato","color:#38f;padding:5px 0;border:none","color:#444;background:#eee;padding:5px 0;");
 console.log("%c ","background:url(https://cdn.jsdelivr.net/gh/Jay-Young/jsDelivrCDN@master/assets/images/hugo/cache/Konachan.com%20-%20305021%20sample.jpg) no-repeat center;background-size:cover;padding-left:100%;padding-bottom:55%;overflow:hidden;border-radius:10px;margin:5px 0");
 console.log(
   "\u606d\u559c\u4f60\u53d1\u73b0\u4e86\u9690\u85cf\u5165\u53e3\uff01\n"
