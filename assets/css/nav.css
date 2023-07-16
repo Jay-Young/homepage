@@ -417,13 +417,15 @@ span {
 }
 
 /*天气样式*/
-[data-v-0a6ec0b4] {
+/*[data-v-41ba7e2c] {
   z-index: 999;
+  width: 10% !important;
 }
-#weather-float-he {
+#he-plugin-simple {
   top: 10px !important;
   right: 10px !important;
-}
+  width: 10% !important;
+}*/
 
 /* ip地址信息 */
 .haoip {
