@@ -9,20 +9,20 @@
   <title>233导航 - 好用的网址导航</title>
   <meta name="keywords" content="上网导航,网址导航,网址大全,网址之家,创意导航,创意网站导航,开发工具,网址聚合,学习教程,233so,233导航" />
   <meta name="description" content="收集国内外优秀的社区、资讯、影视、音乐、游戏、开发、安全、购物网址，提供简洁优雅的上网导航服务，定时更新分享计算机开发学习教程。" />
-  <link rel="shortcut icon" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/favicon.png" />
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arimo:400,700,400italic" />
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/favicon.png"n.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic" />
   <link rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/fonts/linecons/css/linecons.min.css" />
+    href="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/fonts/linecons/css/linecons.min.css" />
   <link rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/fonts/fontawesome/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/fcicon.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/bootstrap.css" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/xenon-core.min.css" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/xenon-components.min.css" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/xenon-skins.min.css" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/nav.min.css" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/fk_service.min.css" />
-  <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/jquery-1.11.1.min.js"></script>
+    href="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/fonts/fontawesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/fcicon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/xenon-core.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/xenon-components.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/xenon-skins.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/nav.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/css/fk_service.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/jquery-1.11.1.min.js"></script>
   <script>
     var _hmt = _hmt || [];
     (function () {
@@ -60,10 +60,10 @@
           <!-- logo -->
           <div class="logo">
             <a href="./" class="logo-expanded">
-              <img src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/logo@2x.png" height="100%" alt="" />
+              <img src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/logo@2x.png" height="100%" alt="" />
             </a>
             <a href="./" class="logo-collapsed">
-              <img src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/logo-collapsed@2x.png" width="32"
+              <img src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/images/logo-collapsed@2x.png" width="32"
                 alt="" />
             </a>
           </div>
@@ -269,9 +269,25 @@
             </script>
           </span>
           <!-- END 显示当前时间结束 -->
+          <!-- 显示倒计时开始 -->
+          <span id="f1china">
+            <script>
+              const targetDate = new Date("2024-04-19T00:00:00+08:00");
+              function updateCountdown() {
+                const currentDate = new Date();
+                if (currentDate < new Date(targetDate.getTime() + 24 * 60 * 60 * 1000)) {
+                  const timeDifference = targetDate - currentDate;
+                  const daysRemaining = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+                  document.getElementById("f1china").textContent = `🎇距离2024赛季中国大奖赛还有${daysRemaining}天🎇`;                  
+                }
+              }
+              setInterval(updateCountdown, 1000);
+            </script>
+          </span>
+          <!-- END 显示倒计时结束 -->
           <!-- 显示当前IP开始 -->
           <span id="c_ip">
-            <script type="text/javascript" src="//haoip.cn/ipjs"></script>
+            <script type="text/javascript" src="https://haoip.cn/ipjs"></script>
           </span>
           <!-- END 显示当前IP结束 -->
           <!-- 夜间模式开始 -->
@@ -3749,11 +3765,11 @@
             <p></p>
             <span id="copyright"></span>
             <a href="./about"><strong>233导航</strong></a> Based on
-            <a href="//github.com/WebStackPage/WebStackPage.github.io" target="_blank"><strong>WebStackPage</strong></a>
+            <a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank"><strong>WebStackPage</strong></a>
             &
-            <a href="//www.seogo.me" target="_blank"><strong>SEOGO</strong></a>
+            <a href="https://www.seogo.me" target="_blank"><strong>SEOGO</strong></a>
             Modified by
-            <a href="//e.coding.net/zxzz/homepage.git" target="_blank"><strong>Jay</strong></a>
+            <a href="https://e.coding.net/zxzz/homepage.git" target="_blank"><strong>Jay</strong></a>
           </div>
           <!-- Go to Top Link, just add rel="go-top" to any link to add this functionality 
                     <div class="go-up">
@@ -3837,16 +3853,16 @@
     });
   </script>
   <!-- Bottom Scripts -->
-  <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/bootstrap.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/TweenMax.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/resizeable.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/joinable.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/xenon-api.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/xenon-toggles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/TweenMax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/resizeable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/joinable.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/xenon-api.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/xenon-toggles.min.js"></script>
   <!-- JavaScripts initializations and stuff -->
-  <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/xenon-custom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/lozad.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/233.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/xenon-custom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/lozad.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Jay-Young/homepage/assets/js/233.min.js"></script>
   <!--仿凡科 右侧悬浮窗 by:zmki   zmki.cn 2020年2月9日17:03:13-->
   <div class="wapnone fk_service">
     <ul>
