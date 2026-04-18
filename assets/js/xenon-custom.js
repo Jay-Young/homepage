@@ -1461,7 +1461,7 @@ function ps_update(destroy_init)
 	if(isxs())
 		return;
 
-	if(jQuery.isFunction(jQuery.fn.perfectScrollbar))
+	if(typeof jQuery.fn.perfectScrollbar === "function")
 	{
 		if(public_vars.$sidebarMenu.hasClass('collapsed'))
 		{
@@ -1484,7 +1484,7 @@ function ps_init()
 	if(isxs())
 		return;
 
-	if(jQuery.isFunction(jQuery.fn.perfectScrollbar))
+	if(typeof jQuery.fn.perfectScrollbar === "function")
 	{
 		if(public_vars.$sidebarMenu.hasClass('collapsed') || ! public_vars.$sidebarMenu.hasClass('fixed'))
 		{
@@ -1500,7 +1500,7 @@ function ps_init()
 
 function ps_destroy()
 {
-	if(jQuery.isFunction(jQuery.fn.perfectScrollbar))
+	if(typeof jQuery.fn.perfectScrollbar === "function")
 	{
 		public_vars.$sidebarMenu.find('.sidebar-menu-inner').perfectScrollbar('destroy');
 	}
